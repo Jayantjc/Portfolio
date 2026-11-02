@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jayant Chugh – Program Analyst</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#EDF1F5;--surface:#FFFFFF;--ink:#13213B;--muted:#55627A;--line:#CBD4E0;--accent:#2552E0;--ok:#168A5B;--miss:#D3DBE6;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;--body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1626;--surface:#16213A;--ink:#E8EEF8;--muted:#9AA9C4;--line:#2A3956;--accent:#7C9CFF;--ok:#4CC38F;--miss:#25334F;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1626;--surface:#16213A;--ink:#E8EEF8;--muted:#9AA9C4;--line:#2A3956;--accent:#7C9CFF;--ok:#4CC38F;--miss:#25334F;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap;padding:1.25rem 0;font-weight:500}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0}
+h1{font-size:clamp(2.75rem,9vw,5.5rem);font-weight:700;letter-spacing:-.03em;margin-top:2.5rem}
+.role{font-size:1.25rem;color:var(--muted);max-width:36rem;margin:1rem 0 0}
+.board{margin-top:2.5rem;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.5rem}
+.board-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.pct{font:700 2.5rem/1 var(--display);color:var(--ok)}
+.grid{display:grid;grid-template-columns:repeat(24,1fr);gap:4px;margin:1.25rem 0 .75rem}
+.grid i{aspect-ratio:1;border-radius:2px;background:var(--miss);transition:background .3s}
+.grid i.on{background:var(--ok)}
+.note{font-size:.9375rem;color:var(--muted);margin:0}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem 2rem;margin:1.25rem 0 0;padding:0;list-style:none;font-size:.9375rem}
+.facts b{font-family:var(--display);font-size:1.25rem}
+section{padding:4rem 0 0}
+h2{font-size:2rem;letter-spacing:-.02em;margin-bottom:1.5rem}
+.job{display:grid;grid-template-columns:11rem 1fr;gap:.5rem 2rem;padding:1.5rem 0;border-top:1px solid var(--line)}
+.when{color:var(--muted);font-size:.9375rem}
+h3{font-size:1.375rem;margin-bottom:.25rem}
+.org{color:var(--muted);margin:0 0 .75rem}
+ul.pts{margin:0;padding-left:1.1rem;max-width:42rem}
+ul.pts li{margin-bottom:.5rem}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.5rem;margin-bottom:1rem}
+.stack{color:var(--muted);font-size:.9375rem;margin:.25rem 0 .75rem}
+.proj-head{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem 1rem;flex-wrap:wrap}
+.proj-link{font-weight:500;text-decoration:none;border:1px solid var(--accent);border-radius:999px;padding:.2rem .85rem;font-size:.9375rem;white-space:nowrap}
+.proj-link:hover{background:var(--accent);color:var(--surface)}
+.sk{display:grid;grid-template-columns:11rem 1fr;gap:.25rem 2rem;padding:.9rem 0;border-top:1px solid var(--line)}
+.sk h3{font-size:1rem}
+.edu{display:grid;grid-template-columns:11rem 1fr;gap:.25rem 2rem;padding:.9rem 0;border-top:1px solid var(--line)}
+.edu p{margin:0}
+.contact{font-size:1.25rem}
+.contact a{display:inline-block;margin-right:1.5rem}
+footer{padding:4rem 0 3rem;color:var(--muted);font-size:.875rem}
+@media (max-width:640px){.job,.sk,.edu{grid-template-columns:1fr}.grid{grid-template-columns:repeat(20,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+
+<header>
+  <h1>Jayant Chugh</h1>
+  <p class="role">I'm a Program Analyst at AiDash. I turn scattered project data into plans and dashboards that teams can act on.</p>
+  <p class="role">My work sits between delivery and data: deciding who has the capacity, spotting what is at risk, and giving stakeholders one place to see where things stand. I started at AiDash validating satellite vegetation-risk data for utility clients, and that habit of checking the data first still shapes how I work.</p>
+</header>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="when">Dec 2025 – present<br>Gurugram, India</div>
+    <div>
+      <h3>Program Analyst</h3><p class="org">AiDash</p>
+      <ul class="pts">
+        <li>Automate delivery tracking in Jira to flag timeline risks early and keep stakeholders informed.</li>
+        <li>Built an internal Jira dashboard showing milestones, risks and delivery metrics across the 10-stage project lifecycle.</li>
+        <li>Created a capacity planning framework that allocates full-time resources across 4 cross-functional teams by utilization, bandwidth and priority.</li>
+        <li>Launched a Power BI dashboard combining Jira, Salesforce and SharePoint as a single source of truth for delivery timelines.</li>
+        <li>Automated imagery cost tracking across 12 vendors and 8 resolution categories, linked to project delivery data.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="job">
+    <div class="when">Jun – Dec 2025<br>Gurugram, India</div>
+    <div>
+      <h3>Business Analyst Intern</h3><p class="org">AiDash</p>
+      <ul class="pts">
+        <li>Analyzed 8+ client projects: gathered requirements, wrote user stories and defined reporting.</li>
+        <li>Worked with 4 teams to improve 2 internal data pipelines that support client deliveries.</li>
+        <li>Cut QA effort by 2 hours per project through dashboard reviews and structured data validation.</li>
+        <li>Standardized 10+ vegetation-risk attributes and delivered analytical datasets to utility customers.</li>
+        <li>Validated 200,000+ satellite vegetation-risk layers for geospatial quality.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <article class="proj">
+    <h3>SPARK: Scenario Planning and Resource Capacity</h3>
+    <p class="stack">Python, SQL, Excel</p>
+    <ul class="pts">
+      <li>Capacity model that automates resource allocation using bandwidth, utilization and skill availability.</li>
+      <li>Allocation logic for 120+ project deliveries, built on demand forecasting and workload balancing.</li>
+      <li>Utilization dashboards and forecasts for real-time capacity visibility and workforce planning.</li>
+    </ul>
+  </article>
+  <article class="proj">
+    <div class="proj-head"><h3>Sales Analytics &amp; Business Intelligence Platform</h3><a class="proj-link" href="https://sales-analytics-v1-0.streamlit.app/" target="_blank" rel="noopener">Live dashboard</a></div>
+    <p class="stack">Python, SQL, Pandas, Streamlit</p>
+    <ul class="pts">
+      <li>Analyzed 250,000+ sales records with Python, SQL, Pandas and NumPy.</li>
+      <li>Cut a query from 693.8 ms to 74.8 ms with indexing, then to 1.5 ms with pre-aggregation.</li>
+      <li>Interactive views for executive KPIs, regional and product performance, customer segments and SQL performance.</li>
+    </ul>
+  </article>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="sk"><h3>Delivery and planning</h3><div>Capacity planning, sprint planning, KPI reporting, Jira dashboards, Jira automation</div></div>
+  <div class="sk"><h3>Analytics</h3><div>Power BI, advanced Excel, data analysis, Salesforce, SharePoint</div></div>
+  <div class="sk"><h3>Data and code</h3><div>SQL, PostgreSQL, Snowflake, Python, Pandas, NumPy, DBeaver</div></div>
+  <div class="sk"><h3>Tools</h3><div>Git, GitHub, VS Code</div></div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="edu"><div class="when">2021 – 2025</div><p><strong>B.Tech, Computer Science Engineering (Big Data Analytics)</strong><br>Netaji Subhas University of Technology, New Delhi</p></div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="contact"><a href="mailto:jayantjc2003@gmail.com">jayantjc2003@gmail.com</a><a href="tel:+917533084398">+91 75330 84398</a></p>
+</section>
+<footer>© 2026 Jayant Chugh</footer>
+</div>
+</body>
+</html>
